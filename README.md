@@ -13,11 +13,16 @@ Projekt obsahuje:
 
 Příklad použití:
 
+Integer a= 0;
+Double b=0.0;
+Long c= 0L;
+Float d =0.0f;
+Short e =0;     
 System.out.println("Vytvářím matice:");     
-Matice m = new Matice(4,4,TypMatice.RANDOM);    
-Matice n = new Matice(3,3,TypMatice.JEDNOTKOVA);    
-Matice zadat = new Matice(4,4,TypMatice.NULOVA);    
-zadat.zadatData();  
+Matice<Double> m = new Matice(b.getClass(),4,4,TypMatice.RANDOM);   
+Matice<Integer> n = new Matice(a.getClass(),3,3,TypMatice.JEDNOTKOVA);  
+Matice<Integer> zadat = new Matice(a.getClass(),4,4,TypMatice.NULOVA);  
+//zadat.zadatData();
 System.out.println(m);  
 System.out.println("Násobení matice m skalarem");   
 System.out.println(m.nasobitSkalarem(5));   
